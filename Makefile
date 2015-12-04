@@ -1,9 +1,10 @@
-.PHONY: build run
+.PHONY: build enter
 
 IMG=finestructure/swift
 
 build:
 	docker build --rm -t $(IMG) .
 
-run:
-	docker run -it --rm $(IMG)
+enter:
+	docker run -it --rm --entrypoint bash $(IMG)
+
