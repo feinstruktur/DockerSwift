@@ -11,7 +11,7 @@ The Dockerfile sets up a `swift` entrypoint which allows running of local swift 
 
 ```
 host $ echo 'print("Hello, World")' > foo.swift
-host $ docker run --rm -v $(PWD):/src finestructure/swift foo.swift
+host $ docker run --rm -v $PWD:/src finestructure/swift foo.swift
 Hello, World
 ```
 
