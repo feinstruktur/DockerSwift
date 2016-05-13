@@ -6,5 +6,5 @@ build:
 	docker build --rm -t $(IMG) .
 
 enter:
-	docker run -it --rm --entrypoint bash $(IMG)
+	docker run -it --rm --privileged=true --entrypoint bash $(IMG)
 
