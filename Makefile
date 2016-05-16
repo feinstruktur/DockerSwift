@@ -1,6 +1,6 @@
 .PHONY: build enter
 
-VERSION=2.2.1-1
+VERSION=3.0-1
 IMG=finestructure/swift:$(VERSION)
 
 build:
