@@ -10,7 +10,7 @@ RUN apt-get install -y libxml2
 
 # install swift
 ENV SWIFT_URL https://swift.org/builds/swift-2.2-branch/ubuntu1510/swift-2.2.1-SNAPSHOT-2016-04-23-a/swift-2.2.1-SNAPSHOT-2016-04-23-a-ubuntu15.10.tar.gz
-RUN curl ${SWIFT_URL} | tar -xvz --strip-components 1
+RUN curl ${SWIFT_URL} | tar -xz --strip-components 1
 # fix an issue with a modulemap not being world readable
 RUN chmod -R o+r /usr/lib/swift
 
