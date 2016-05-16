@@ -1,6 +1,6 @@
 FROM ubuntu:15.10
 
-LABEL version="2015-12-04"
+LABEL version="2016-05-16"
 
 RUN apt-get update --fix-missing
 RUN apt-get upgrade -y
